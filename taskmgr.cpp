@@ -186,7 +186,6 @@ taskmgr::~taskmgr()
     delete ui;
 }
 
-
 void taskmgr::selectionClicked(int column)
 {
     selectColumn = column;
@@ -200,13 +199,11 @@ void taskmgr::selectionClicked(int column)
     refresh_proc_table();
 }
 
-
 void taskmgr::on_search_textChanged(const QString &arg1)
 {
     query = arg1;
     search();
 }
-
 
 void taskmgr::search()
 {
